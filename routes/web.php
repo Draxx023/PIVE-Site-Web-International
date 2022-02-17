@@ -26,7 +26,7 @@ Route::get('/CV', function () {
     return view('generateurcv');
 });
 Route::get('/Profil', function () {
-    return view('profil');
+    return view('components.layout-profil');
 });
 Route::get('/GestionDestinations', 'DestinationController@liste');
 Route::post('/GestionDestinations', 'DestinationController@suppDestination');
